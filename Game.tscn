@@ -11,4 +11,4 @@ scale = Vector2( 0.35, 0.35 )
 
 [node name="Swarm" parent="." instance=ExtResource( 2 )]
 position = Vector2( 468.529, 26.6968 )
-scale = Vector2( 1.005, 1 )
+scale = Vector2( 0.25, 0.25 )

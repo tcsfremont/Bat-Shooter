@@ -17,7 +17,7 @@ func _process(delta):
 		if not body.good:
 			body.hit=true
 			body.queue_free()
-
+			queue_free()
 func _on_VisibilityNotifier2D_screen_exited():
 	queue_free()
 	

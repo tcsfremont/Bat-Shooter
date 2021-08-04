@@ -7,15 +7,48 @@
 script = ExtResource( 2 )
 
 [node name="Monster" parent="." instance=ExtResource( 1 )]
-scale = Vector2( 0.25, 0.25 )
+position = Vector2( 0, -2.11896 )
 
 [node name="RightNotifier" type="VisibilityNotifier2D" parent="."]
-position = Vector2( 69.6802, -0.0418015 )
+position = Vector2( 1416.58, 1.5456 )
 scale = Vector2( 0.434315, 0.858579 )
 
 [node name="LeftNotifier" type="VisibilityNotifier2D" parent="."]
-position = Vector2( -70.1289, 1.14447 )
+position = Vector2( -863.43, -0.25259 )
 scale = Vector2( 0.417295, 1 )
+
+[node name="Monster2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1.80756, 220.25 )
+
+[node name="Monster3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 531.851, 214.011 )
+
+[node name="Monster4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 4.23785, 442.856 )
+
+[node name="Monster5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 539.692, 438.426 )
+
+[node name="Monster6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 533.962, -4.23787 )
+
+[node name="Monster7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1072.16, -11.119 )
+
+[node name="Monster8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1072.18, 214.012 )
+
+[node name="Monster9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1074.3, 440.737 )
+
+[node name="Monster10" parent="." instance=ExtResource( 1 )]
+position = Vector2( -527.64, -0.409485 )
+
+[node name="Monster11" parent="." instance=ExtResource( 1 )]
+position = Vector2( -529.731, 224.606 )
+
+[node name="Monster12" parent="." instance=ExtResource( 1 )]
+position = Vector2( -538.207, 442.856 )
 
 [connection signal="screen_exited" from="RightNotifier" to="." method="_on_RightNotifier_screen_exited"]
 [connection signal="screen_exited" from="LeftNotifier" to="." method="_on_LeftNotifier_screen_exited"]
