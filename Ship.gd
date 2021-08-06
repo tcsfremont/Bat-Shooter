@@ -1,8 +1,9 @@
 extends KinematicBody2D
 
 export var good=true 
-var speed:=800.0
+export var speed:=800.0
 onready var Laser=load("res://Laser.tscn")
+var hit := false
 
 func _ready():
 	pass 
@@ -23,3 +24,8 @@ func _process(delta):
 		var laser=Laser.instance()
 		laser.position=position
 		parent.add_child(laser)
+
+
+func _on_VisibilityNotifier2D_screen_exited():
+	if hit:
+		get_tree().change_scene("res://Lose.tscn")
