@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 onready var Laser=load("res://Phaser.tscn")
 var rng=RandomNumberGenerator.new()
-export var good=false 
+export var good := -1
 export var hit=false
 export var min_cooldown=1.0
 export var max_cooldown=10.0

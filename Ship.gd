@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export var good=true 
+export var good:= 1
 export var speed:=800.0
 onready var Laser=load("res://Laser.tscn")
 var hit := false
